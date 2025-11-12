@@ -1,0 +1,17 @@
+# AI-Powered Recruitment Enhancement Microservice
+# MINIMAL DEPENDENCIES - Only what's actually used
+
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# HTTP & API Calls
+requests==2.31.0
+
+# Resume Parsing
+pdfplumber==0.10.3
+
+# Configuration
+python-dotenv==1.0.0
