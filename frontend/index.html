@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recruitment Enhancement UI</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AI-Powered Recruitment Enhancement</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2> Bulk Resume Screening </h2>
+      <p class="info-text">Upload 10-20 resume PDFs and get the best candidate ranked with scoring details</p>
+      <div class="grid">
+        <label class="full">Job Description for Screening
+          <textarea id="bulk_jd" rows="4" placeholder="Paste the job description to match candidates against...">We are looking for a Senior Data Scientist with strong Python, Machine Learning, and NLP skills. Must have 3+ years of experience in production ML systems.</textarea>
+        </label>
+        <label class="full">Required Skills (comma or line separated)
+          <textarea id="bulk_skills" rows="2">Python, Machine Learning, NLP, SQL, Deep Learning</textarea>
+        </label>
+        <label>Required Experience (years)
+          <input id="bulk_exp" type="number" value="3" min="0" />
+        </label>
+      </div>
+      <div class="upload-area">
+        <label for="pdfFiles" class="file-label">
+          <span>Choose Resume PDFs (10-20 files)</span>
+          <input id="pdfFiles" type="file" accept=".pdf" multiple style="display:none" />
+        </label>
+        <div id="fileList" class="file-list"></div>
+      </div>
+      <button id="processBulk" disabled>Process All Resumes</button>
+      <div id="bulkProgress" class="progress-bar"></div>
+      <div id="bulkResults" class="results-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Backend v1.0 • FastAPI</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
