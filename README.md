@@ -37,14 +37,6 @@ The system follows a microservice architecture, acting as an intelligent layer t
 - Formal partnership programs
 - Third-party integration platforms (iPaaS)
 
-## Technology Stack
-
-- **Infrastructure**: AWS (S3, EC2, SageMaker), Google Cloud AI, Azure AI
-- **Data Pipeline**: Apache Kafka, RabbitMQ, PostgreSQL, MongoDB
-- **NLP/ML**: Hugging Face Transformers, spaCy, PyTorch/TensorFlow
-- **MLOps**: MLflow, Kubeflow, Weights & Biases
-- **Orchestration**: Docker, Kubernetes
-
 ## Getting Started
 
 See individual module documentation in their respective directories:
@@ -60,14 +52,5 @@ See individual module documentation in their respective directories:
 3. **Human-in-the-Loop**: Augments recruiter decisions rather than replacing them
 4. **Modular Deployment**: Customers can adopt individual modules or full suite
 
-## Target Market
 
-Mid-market companies (200-2,000 employees) seeking to enhance existing ATS without disruptive platform replacement.
 
-## License
-
-[To be determined]
-
-## Contact
-
-[To be determined]
